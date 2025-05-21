@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade de Apoio | Conexão Saúde</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-heartbeat"></i>Conexão Saúde</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="comunidade.html" class="active">Comunidade</a></li>
+                    <li><a href="guia.html">Guia de Cuidados</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Comunidade de Apoio</h2>
+            <p>Conecte-se, compartilhe experiências e encontre apoio</p>
+        </div>
+    </section>
+
+    <section class="comunidade-content">
+        <div class="container">
+            <div class="comunidade-main">
+                <div class="forum-header">
+                    <h3><i class="fas fa-comments"></i> Fórum de Discussão</h3>
+                    <button id="novo-topico" class="btn-small">+ Novo Tópico</button>
+                </div>
+                
+                <div class="topicos-list">
+                    <div class="topico-card">
+                        <div class="topico-header">
+                            <h4>Diabetes - Controle e Qualidade de Vida</h4>
+                            <span class="topico-stats">15 respostas</span>
+                        </div>
+                        <p>Compartilhe dicas sobre alimentação, exercícios e controle glicêmico</p>
+                        <div class="topico-footer">
+                            <span>Por: Ana C. - 2 dias atrás</span>
+                            <a href="#" class="btn-small">Participar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="topico-card">
+                        <div class="topico-header">
+                            <h4>Saúde Mental - Lidando com a Ansiedade</h4>
+                            <span class="topico-stats">32 respostas</span>
+                        </div>
+                        <p>Troque experiências sobre estratégias de enfrentamento</p>
+                        <div class="topico-footer">
+                            <span>Por: João M. - 1 semana atrás</span>
+                            <a href="#" class="btn-small">Participar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="topico-card">
+                        <div class="topico-header">
+                            <h4>Cuidadores de Idosos - Apoio e Orientação</h4>
+                            <span class="topico-stats">8 respostas</span>
+                        </div>
+                        <p>Espaço para cuidadores compartilharem desafios e soluções</p>
+                        <div class="topico-footer">
+                            <span>Por: Maria L. - 3 dias atrás</span>
+                            <a href="#" class="btn-small">Participar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comunidade-sidebar">
+                <div class="sidebar-card">
+                    <h4><i class="fas fa-user-md"></i> Profissionais Online</h4>
+                    <ul class="profissionais-list">
+                        <li>Carla Pereira - Psicóloga</li>
+                        <li>Marcos Kipper - Clínico Geral</li>
+                        <li>Juliana Rosa - Nutricionista</li>
+                    </ul>
+                    <button id="chat-profissional" class="btn-small">Falar com Profissional</button>
+                </div>
+                
+                <div class="sidebar-card">
+                    <h4><i class="fas fa-heart"></i> Apoio Emocional</h4>
+                    <p>Precisa conversar? Envie uma mensagem anônima para nossos psicólogos parceiros:</p>
+                    <textarea id="mensagem-anonima" placeholder="Escreva sua mensagem..."></textarea>
+                    <button id="enviar-anonimo" class="btn-small">Enviar Anonimamente</button>
+                </div>
+                
+                <div class="sidebar-card">
+                    <h4><i class="fas fa-calendar-alt"></i> Eventos</h4>
+                    <div class="evento">
+                        <h5>Palestra: Autocuidado e Saúde Mental</h5>
+                        <p>15/10 - 19h | Online</p>
+                        <button class="btn-small">Participar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="novo-topico-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3><i class="fas fa-plus"></i> Criar Novo Tópico</h3>
+            <form id="form-topico">
+                <div class="form-group">
+                    <label for="topico-titulo">Título do Tópico:</label>
+                    <input type="text" id="topico-titulo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="topico-categoria">Categoria:</label>
+                    <select id="topico-categoria" required>
+                        <option value="">Selecione...</option>
+                        <option value="saude-mental">Saúde Mental</option>
+                        <option value="doencas-cronicas">Doenças Crônicas</option>
+                        <option value="cuidadores">Cuidadores</option>
+                        <option value="prevencao">Prevenção</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="topico-mensagem">Mensagem:</label>
+                    <textarea id="topico-mensagem" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label><input type="checkbox" id="topico-anonimo"> Postar anonimamente</label>
+                </div>
+                
+                <button type="submit" class="btn">Publicar Tópico</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Conexão Saúde - Todos os direitos reservados</p>
+            <p>Desenvolvido por Adrianne Ayumi Izu, Andrew Coelho, _ e _ </p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

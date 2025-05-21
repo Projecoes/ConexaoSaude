@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Cuidados | Conexão Saúde</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-heartbeat"></i>Conexão Saúde</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="comunidade.html">Comunidade</a></li>
+                    <li><a href="guia.html" class="active">Guia de Cuidados</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Guia de Cuidados</h2>
+            <p>Informações e recursos para promover sua saúde e bem-estar</p>
+        </div>
+    </section>
+
+    <section class="guia-content">
+        <div class="container">
+            <div class="guia-categorias">
+                <div class="categoria-card" data-categoria="prevencao">
+                    <i class="fas fa-shield-virus"></i>
+                    <h3>Prevenção</h3>
+                </div>
+                <div class="categoria-card" data-categoria="saude-mental">
+                    <i class="fas fa-brain"></i>
+                    <h3>Saúde Mental</h3>
+                </div>
+                <div class="categoria-card" data-categoria="doencas-cronicas">
+                    <i class="fas fa-notes-medical"></i>
+                    <h3>Doenças Crônicas</h3>
+                </div>
+                <div class="categoria-card" data-categoria="familia">
+                    <i class="fas fa-home"></i>
+                    <h3>Família</h3>
+                </div>
+                <div class="categoria-card" data-categoria="idosos">
+                    <i class="fas fa-wheelchair"></i>
+                    <h3>Idosos</h3>
+                </div>
+                <div class="categoria-card" data-categoria="alimentacao">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Alimentação</h3>
+                </div>
+            </div>
+            
+            <div class="guia-materiais">
+                <h3><i class="fas fa-book-medical"></i> Materiais em Destaque</h3>
+                
+                <div class="material-card">
+                    <div class="material-img">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="material-info">
+                        <h4>Cartilha: Cuidados com a Saúde Mental</h4>
+                        <p>Guia completo com estratégias para manter sua saúde emocional em dia</p>
+                        <a href="#" class="btn-small"><i class="fas fa-download"></i> Baixar (PDF - 2MB)</a>
+                    </div>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-img">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="material-info">
+                        <h4>Vídeo: Alimentação Saudável para Diabéticos</h4>
+                        <p>Nutricionista explica como montar um prato equilibrado</p>
+                        <a href="#" class="btn-small"><i class="fas fa-play"></i> Assistir</a>
+                    </div>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-img">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="material-info">
+                        <h4>Infográfico: Sinais de Depressão</h4>
+                        <p>Reconheça os principais sintomas e saiba quando buscar ajuda</p>
+                        <a href="#" class="btn-small"><i class="fas fa-expand"></i> Visualizar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="guia-quiz">
+                <h3><i class="fas fa-question-circle"></i> Teste seus conhecimentos</h3>
+                <div class="quiz-container">
+                    <div id="quiz-pergunta">
+                        <h4>Como você avalia seus hábitos de saúde?</h4>
+                        <p>Responda nosso quiz rápido e receba dicas personalizadas</p>
+                        <button id="iniciar-quiz" class="btn">Iniciar Quiz</button>
+                    </div>
+                    <div id="quiz-questions" style="display: none;">
+                        <!-- As perguntas serão inseridas via JavaScript -->
+                    </div>
+                    <div id="quiz-result" style="display: none;">
+                        <!-- O resultado será inserido via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Conexão Saúde - Todos os direitos reservados</p>
+            <p>Desenvolvido por Adrianne Ayumi Izu, Andrew Coelho, _ e _ </p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
