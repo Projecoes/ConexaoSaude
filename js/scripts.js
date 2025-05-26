@@ -129,9 +129,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    
+    function OvoEsquerdo() {
+        console.log('VAPO')
+    }
     
     // Quiz no Guia de Cuidados
     if (document.getElementById('iniciar-quiz')) {
+
         const quizQuestions = [
             {
                 question: "Com que frequência você pratica atividade física?",
