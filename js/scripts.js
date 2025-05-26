@@ -130,11 +130,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    
-    function OvoEsquerdo() {
-        console.log('VAPO')
-    }
-    
     // Quiz no Guia de Cuidados
     if (document.getElementById('iniciar-quiz')) {
 
