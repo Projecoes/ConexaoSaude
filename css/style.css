@@ -480,6 +480,46 @@ nav ul li a:hover, nav ul li a.active {
     color: var(--text-light);
 }
 
+/* Footer das páginas */
+
+footer{
+    border-top: 1px solid var(--text-light);
+    padding: 15px 10vw;
+}
+
+footer a {
+    color: var(--primary-color);
+}
+
+footer a:active, footer a:hover {
+    color: var(--secondary-color);
+}
+
+footer .container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 7fr 3fr;
+  
+}
+
+footer p{
+    font-size: 0.6rem;
+    line-height: 1.2rem;
+}
+
+.footer-info {
+    display: flex;
+    flex-shrink: 2;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
 .sidebar-card {
     background-color: white;
     padding: 20;
