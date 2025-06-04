@@ -105,7 +105,7 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg');
+    background: linear-gradient(rgba(102, 102, 102, 0.6), rgba(99, 98, 98, 0.6)), url('../../assets/images/pexels-ivan-samkov-4240610.jpg');
     background-size: cover;
     background-position: center;
     color: white;
