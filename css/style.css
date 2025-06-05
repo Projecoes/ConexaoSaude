@@ -526,6 +526,7 @@ nav ul li a:hover, nav ul li a.active {
     margin: 0 5px;
     border: 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
 }
 
 .categoria-card:hover {
@@ -545,7 +546,7 @@ nav ul li a:hover, nav ul li a.active {
     color: var(--primary-color);
     font-size: 0.9rem;
     font-weight: 600;
-    margin: 0; /* remover margens padrão */
+    margin: 0; 
 }
 
 /* Materiais do guia */
@@ -562,7 +563,6 @@ div .main-categorias{
     justify-self: center;
     margin: 10px 0;
     width: 100%;
-
 }
 
 .material-card {
@@ -572,6 +572,7 @@ div .main-categorias{
     margin: 5px 0;
     padding: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .material-info {
@@ -592,6 +593,7 @@ div .main-categorias{
     padding: 10px;
     margin: 5px 0;
     height: 90%;
+    border-radius: 10px;
 }
 
 .quiz-pergunta {
