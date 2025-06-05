@@ -168,8 +168,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const iniciarQuizBtn = document.getElementById('iniciar-quiz');
         const quizPerguntaDiv = document.getElementById('quiz-pergunta');
-        const quizQuestionsDiv = document.getElementById('quiz-questions');
-        const quizResultDiv = document.getElementById('quiz-result');
+        const quizQuestionsDiv = document.getElementById('quiz-input');
+        const quizResultDiv = document.getElementById('quiz-output');
         
         let currentQuestion = 0;
         let totalScore = 0;
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const question = quizQuestions[currentQuestion];
             quizQuestionsDiv.innerHTML = `
-                <div class="quiz-question">
+                <div class="quiz-input">
                     <h4>${question.question}</h4>
                     <div class="quiz-options" id="quiz-options">
                         ${question.options.map((option, index) => `
@@ -276,10 +276,50 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Formulário de Agendamento
     if (document.getElementById('form-agendamento')) {
+
+        function justNumbers(input) {
+            console.log("telefone" + input.value.replace(/[^0-9]/g, ''));
+            return input.value.replace(/[^0-9]/g, '');
+          }
+
+        function validarEmail() {
+            const email = document.getElementById('forms-email');
+            const emailRegex = /\S+@\S+\.\S+/;
+            
+            if (emailRegex.test(email.value)) {
+                email.setCustomValidity("");
+                email.reportValidity(true);
+                return true;
+            } else {
+                email.setCustomValidity('Por favor, insira um endereço de email válido.');
+                email.reportValidity(false);
+                email.focus();
+                return false;
+            }
+        }
+
+        function validarTelefone() {
+            const telefone = document.getElementById('forms-telefone');
+            const numeros = justNumbers(telefone);
+
+            if (telefone.validity.valid && (numeros.length == 10 || numeros.length == 11)) {
+                telefone.setCustomValidity("");
+                telefone.reportValidity(true);
+                return true;
+            } else {
+                telefone.setCustomValidity('Por favor, insira um telefone inválido com 10 ou 11 dígitos.');
+                telefone.reportValidity(false);
+                telefone.focus();
+                return false;
+            }
+        }
+        
         document.getElementById('form-agendamento').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Solicitação de agendamento enviada com sucesso! Nossa equipe entrará em contato em breve para confirmar os detalhes.');
-            this.reset();
+            if (validarEmail() && validarTelefone()){
+                alert('Solicitação de agendamento enviada com sucesso! Nossa equipe entrará em contato em breve para confirmar os detalhes.');
+                this.reset();
+            }
         });
     }
     
@@ -288,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.categoria-card').forEach(card => {
             card.addEventListener('click', function() {
                 const categoria = this.dataset.categoria;
-                alert(`Você selecionou a categoria: ${this.querySelector('h3').textContent}. Em uma versão completa, isso filtraria os materiais.`);
+                alert(`Você selecionou a categoria: ${this.querySelector('p').textContent}. Em uma versão completa, isso filtraria os materiais.`);
             });
         });
     }
