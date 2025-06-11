@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('enviar-anonimo').addEventListener('click', function() {
             const mensagem = document.getElementById('mensagem-anonima').value.trim();
             if (mensagem) {
-                alert('Mensagem enviada anonimamente. Um profissional entrará em contato em breve.');
+                alert('Mensagem enviada anonimamente. Agradecemos pelo seu apoio.');
                 document.getElementById('mensagem-anonima').value = '';
             } else {
                 alert('Por favor, escreva sua mensagem antes de enviar.');
