@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
         nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
         
-        // Auto-rotate slides every 5 seconds
+        // Tempo de torca de slide: 5s
         setInterval(() => showSlide(currentSlide + 1), 5000);
     }
     
@@ -73,13 +73,13 @@ document.addEventListener('DOMContentLoaded', function() {
         function sendMessage() {
             const message = chatbotInput.value.trim();
             if (message) {
-                // Add user message
+                // Mensagem do user
                 const userMessage = document.createElement('div');
                 userMessage.className = 'user-message';
                 userMessage.textContent = message;
                 chatbotMessages.appendChild(userMessage);
                 
-                // Bot response
+                // Resposta do chat
                 setTimeout(() => {
                     const botResponse = document.createElement('div');
                     botResponse.className = 'bot-message';
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         function prevQuestion() {
             currentQuestion--;
-            totalScore = 0; // Reset score for simplicity
+            totalScore = 0; 
             showQuestion();
         }
         

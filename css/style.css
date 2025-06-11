@@ -340,6 +340,7 @@ nav ul li a:hover, nav ul li a.active {
 
 .form-group {
     margin-bottom: 20px;
+    display: flex;
 }
 
 .form-group.agendamento label {
@@ -352,16 +353,17 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .form-group.agendamento input[type="checkbox"] {
-    width: auto; /* Remove o width: 100% que estava sendo aplicado */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove padding padrão */
+    width: auto; 
+    margin: 0;
+    padding: 0;
     cursor: pointer;
 }
 
 .form-group input, 
 .form-group select, 
 .form-group textarea {
-    width: 100%;
+    justify-content:left;
+    width: 60%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -374,6 +376,9 @@ nav ul li a:hover, nav ul li a.active {
     resize: vertical;
 }
 
+label {
+    white-space: nowrap
+}
 .radio-group {
     display: flex;
     gap: 15px;
