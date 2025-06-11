@@ -98,6 +98,8 @@ nav ul li a:hover, nav ul li a.active {
     color: var(--primary-color);
 }
 
+/* Menu Toggle (telas pequenas) */
+
 .menu-toggle {
     background: none;
     border: none;
@@ -105,6 +107,60 @@ nav ul li a:hover, nav ul li a.active {
     color: var(--primary-color);
     cursor: pointer;
     display: none;
+}
+
+.menu-toggle-dropdown {
+    border: 2px yellow;
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#menu-dropdown .show {
+    position: relative;
+    border: 2px solid red;
+    display: none;
+    position: relative;
+}
+
+#menu-dropdown ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#menu-dropdown ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#menu-dropdown ul li a:hover, #menu-dropdown ul li a.active {
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
 }
 
 /* Hero Section */

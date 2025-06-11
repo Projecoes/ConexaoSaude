@@ -1,10 +1,25 @@
-// Menu Mobile
+// Menu Telas Pequenas
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav ul');
-    
-    menuToggle.addEventListener('click', function() {
-        nav.classList.toggle('show');
+    const buttonDropdown = document.getElementById('button-dropdown');
+    const menuDropdown = document.getElementById('menu-dropdown');
+    console.log(menuDropdown); 
+
+    //Abre e fecha ao clicar no button
+    buttonDropdown.addEventListener('click', function() {
+        menuDropdown.classList.toggle('show');
+        console.log(menuDropdown); 
+    });
+
+     // Fecha ao clicar no próprio menu
+     menuDropdown.addEventListener('click', function () {
+        menuDropdown.classList.remove('show');
+        console.log(menuDropdown); 
+    });
+
+    // Fecha ao sair com o mouse de cima do menu
+    menuDropdown.addEventListener('mouseleave', function () {
+        menuDropdown.classList.remove('show');
+        console.log(menuDropdown); 
     });
     
     // Slider de Campanhas
