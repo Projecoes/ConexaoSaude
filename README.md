@@ -4,6 +4,7 @@ Receber atendimento médico virtual.
 Acessar informações relevantes sobre bem-estar e cuidados com a saúde.
 
 Funcionalidades Principais:
+
 ✔ Fórum de Discussão: Permite que usuários postem dúvidas e interajam com respostas da comunidade ou de profissionais.
 
 ✔ Atendimento Virtual: Área dedicada para agendamento e recebimento de consultas online.
@@ -11,11 +12,13 @@ Funcionalidades Principais:
 ✔ Informações de Saúde: Artigos e dicas sobre prevenção, sintomas e tratamentos.
 
 Tecnologias Utilizadas:
+
 HTML5 (Estrutura do site).
 
 CSS3 (Estilização e responsividade).
 
 Como Visualizar o Projeto: 
+
 Acesse o GitHub Pages do projeto: Link do GitHub Pages (adicione o link após fazer o deploy). Ou clone o repositório e abra o arquivo index.html no navegador:
 
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
