@@ -25,3 +25,4 @@ bash
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
 Desenvolvido por Adrianne Ayumi Izu, Andrew Coelho Feitosa, Carolina Palmeiro Pereira e Erick Rolim no semestre 2025/01.
+<img width="1920" height="1080" alt="Home conexao saude" src="https://github.com/user-attachments/assets/fb761c48-5591-4a1f-88c8-b83af622c924" />
