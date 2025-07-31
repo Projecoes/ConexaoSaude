@@ -19,7 +19,7 @@ CSS3 (Estilização e responsividade).
 
 Como Visualizar o Projeto: 
 
-Acesse o GitHub Pages do projeto: Link do GitHub Pages (adicione o link após fazer o deploy). Ou clone o repositório e abra o arquivo index.html no navegador:
+Ou clone o repositório e abra o arquivo index.html no navegador:
 
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
